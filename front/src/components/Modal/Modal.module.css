@@ -1,0 +1,89 @@
+.modalContainer {
+  width: 100%;
+  height: 216.411vw;
+
+  z-index: 100;
+  color: white;
+  background: linear-gradient(90deg, #000000 3.18%, rgba(0, 0, 0, 0) 89.59%),
+    url("../../assets/modalBg.png");
+}
+.arrowBack {
+  position: absolute;
+  top: 7.179vw;
+  right: 4.358vw;
+  background: url("../../assets/backBtn.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 5.128vw;
+  width: 7.179vw;
+}
+.anchorContainer {
+  position: absolute;
+
+  top: 76.66vw;
+  left: calc(50% - 61.025vw / 2 + 0.5px);
+
+  width: 61.025vw;
+  height: 48.717vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.text {
+  font-family: "Kudryashev Display";
+  font-style: normal;
+  font-weight: 401;
+  font-size: 7.692vw;
+  line-height: 10.256vw;
+  /* identical to box height, or 133% */
+
+  /* white */
+  color: #ffffff;
+}
+.circleContainer {
+  width: 100vw;
+  height: 216.411vw;
+  position: absolute;
+
+  background: url("../../assets/Group 739.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: 0.7;
+}
+.centerText {
+    margin: 0 auto;
+}
+.socialLinks {
+    position: absolute;
+    width: 23.589vw;
+    height:10.769vw;
+    top: 179.769vw;
+
+  left: calc(50% - 23.589vw / 2 + 0.5px);
+
+  background: url("../../assets/socialLinks.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.socialDescription {
+    text-align: center;
+    position: absolute;
+width: 55.051vw;
+height: 10.256vw;
+top: 190.769vw;
+left: calc(50% - 55.051vw / 2 + 0.5px);
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 300;
+font-size: 3.076vw;
+line-height: 10.256vw;
+/* identical to box height, or 333% */
+
+/* white */
+color: #FFFFFF;
+
+}

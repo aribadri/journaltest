@@ -1,0 +1,23 @@
+:root {
+    --fontColor: white;
+    --text-primary: black;
+
+  }
+  [data-theme="dark"] {
+    --fontColor: black;
+    --text-primary: white;
+ 
+  }
+
+.item {
+
+font-family: 'Kudryashev Display'!important;
+font-style: normal!important;
+font-weight: 400!important;
+font-size: 2.222vw!important;
+line-height: 4.236vw!important;
+/* identical to box height, or 191% */
+
+color: var(--text-primary) !important;
+
+}

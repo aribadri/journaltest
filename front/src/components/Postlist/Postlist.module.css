@@ -1,0 +1,165 @@
+/* .postlistContainer {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    position: absolute;
+    width: 100vw;
+    
+
+
+
+} */
+:root {
+  --fontColor: white;
+  --text-primary: black;
+  --background: url("../../assets/whitebg.png");
+
+
+}
+[data-theme='dark'] {
+  --fontColor: black;
+  --text-primary: white;
+  --background: 
+
+  linear-gradient(0deg, #000000 2.6%, rgba(0, 0, 0, 0) 70.64%),
+  url("../../assets/mainbg.png");
+
+
+}
+.mobliePostList {
+
+  display: none;
+
+}
+.firstPostContainer {
+  position: absolute;
+  top: 0.833vw;
+  right: 26.38vw;
+  width: 47.222vw;
+  height: 48.12vw;
+  z-index: 11;
+  /* background-color: #fff; */
+}
+.firstPostPhoto {
+  border-radius: 5px;
+  width: 47.22vw;
+  height: 33.68vw;
+  /* background: url("../../assets/m1.png");
+  background-size: cover;
+  background-repeat: no-repeat; */
+}
+.postTag {
+  width: 680px;
+  height: 26px;
+
+  /* Text / Body text */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.25vw;
+  line-height: 26px;
+  color: var(--text-primary);
+  margin-top: 30px;
+}
+.postTitle {
+  width: 426px;
+  height: 122px;
+
+  /* Headings/H3 */
+  font-family: "Kudryashev Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 4.861vw;
+  line-height: 61px;
+  /* or 87% */
+
+  /* white */
+  color: var(--text-primary);
+
+  margin-top: 2.083vw;
+}
+.secondPostContainer {
+  position: absolute;
+  top: 60.208vw;
+  right: 2.0833vw;
+  width: 31.0416vw;
+  height: 34.097vw;
+  /* background-color: #fff; */
+}
+.secondPostPhoto {
+  border-radius: 5px;
+  width: 100%;
+  height: 23.888vw;
+  /* background: url("../../assets/m1.png");
+  background-size: cover;
+  background-repeat: no-repeat; */
+}
+
+.thirdPostContainer {
+  position: absolute;
+  top: 104.791vw;
+  right: 42.569vw;
+  width: 31.041vw;
+  height: 38.333vw;
+}
+.fourthPostContainer {
+  position: absolute;
+  top: 104.791vw;
+
+  right: 2.152vw;
+  width: 31.041vw;
+  height: 38.333vw;
+}
+.fivthPostContainer {
+  position: absolute;
+  top: 154.375vw;
+  right: 2.152vw;
+
+  width: 70.972vw;
+  height: 43.8888vw;
+}
+.sixthPostContainer {
+  position: absolute;
+  top: 208.75vw;
+  right: 2.152vw;
+
+  width: 47.222vw;
+  height: 48.125vw;
+}
+.sixthPostPhoto {
+  width: 47.222vw;
+
+  height: 33.68vw;
+}
+.fivthPostPhoto {
+  width: 70.972vw;
+  height: 33.68vw;
+}
+.trirdPostPhoto {
+  width: 31.0416vw;
+  height: 23.888vw;
+}
+
+@media screen and (max-width: 480px) {
+  .postlistContainer {
+    display: none;
+  }
+  .mobliePostList {
+    position: absolute;
+    top: 208.541vw;
+    background: var(--text-primary);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    width: 100vw;
+    height: auto;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+  }
+}

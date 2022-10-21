@@ -1,0 +1,74 @@
+@media screen and (max-width: 480px) {
+
+    :root {
+        --fontColor: white;
+        --text-primary: black;
+        --background: url("../../assets/whitebg.png");
+      
+      
+      }
+      [data-theme='dark'] {
+        --fontColor: black;
+        --text-primary: white;
+        --background: 
+      
+        linear-gradient(0deg, #000000 2.6%, rgba(0, 0, 0, 0) 70.64%),
+        url("../../assets/mainbg.png");
+      
+      
+      }
+
+.postTitle {
+    width: 63.333vw;
+    height: 18.461vw;
+    
+    font-family: 'Kudryashev Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 9.743vw;
+    line-height: 9.23vw;
+    /* or 95% */
+    
+    /* white */
+    color: var(--fontColor);
+    margin-top: 5.128vw;
+    text-decoration: none;
+
+}
+.mobileLinks{
+    text-decoration: none;
+}
+.postTag {
+    margin-top: 3.128vw;
+
+    text-decoration: none;
+    width: 28.461vw;
+    height: 3.846vw;
+    
+    /* Text3 */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.076vw;
+    line-height: 3.846vw;
+    /* identical to box height */
+    
+    /* white */
+    color: var(--fontColor);
+
+
+}
+.mobilePostitem{
+    text-decoration: none;
+
+    width: 95%;
+    margin-left: 2.5%;
+    height: 96.153vw;
+    margin-bottom: 10vw;
+}
+.postPicture{
+    width: 100%;
+    height: 63.589vw;
+}
+
+}

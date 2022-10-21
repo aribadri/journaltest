@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'Kudryashev Display';
+  src: url(../src/fonts/KudryashevDisplay-Sans/KudryashevDisplay.ttf);
+}
+
+@font-face {
+  font-family: 'Kudryashev Display Sans';
+  src: url(../src/fonts/KudryashevDisplay-Sans/KudryashevDisplay-Sans.ttf);
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url(../src/fonts/Inter/Inter/static/Inter-Regular.ttf);
+}
+
+body {
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Kudryashev Display Sans', 'Inter', 'Kudryashev Display';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

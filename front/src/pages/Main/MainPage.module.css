@@ -1,0 +1,396 @@
+* {
+  font-family: "Kudryashev Display";
+}
+:root {
+  --fontColor: white;
+  --text-primary: black;
+  --contentBackground: url('../../assets/whitebg.png');
+  --background: linear-gradient(90deg, white 10.47%, rgba(0, 0, 0, 0) 96.73%),
+    url("../../assets/modalBg2.png");
+  --mobileBg: linear-gradient(10deg, #000000 0.47%, rgba(0, 0, 0, 0) 36.73%),
+    url("../../assets/image 110.png");
+
+  --fb-logo: url("../../assets/fbBlack.png");
+  --inst-logo: url("../../assets/instBlack.png");
+  --arrow-down: url("../../assets/arroDownBlack.png");
+  --header-logo: url("../../assets/logoBlack.png");
+  --arrow-down-mobile: url("../../assets/arrowdown.png");
+  --theme-mode-btn: url("../../assets/mob_whitemode_btn.png");
+  --border: rgba(255, 255, 255, .7);
+  --mobBg: url('../../assets/mobBgWhite.svg')
+
+
+}
+[data-theme="dark"] {
+  --contentBackground: url('../../assets/bg\ 1.png');
+
+  --fontColor: black;
+  --text-primary: white;
+  --background: linear-gradient(0deg, #000000 2.6%, rgba(0, 0, 0, 0) 30.64%),
+    url("../../assets/mainbg.png");
+  --mobileBg: linear-gradient(10deg, #fff 25.47%, rgba(255, 255, 255, 0) 36.73%),url("../../assets/whiteBG2.png");
+  --fb-logo: url("../../assets/fblogo.png");
+  --inst-logo: url("../../assets/instlogo.png");
+  --arrow-down: url("../../assets/arrowdown.png");
+  --arrow-down-mobile: url("../../assets/arroDownBlack.png");
+  --theme-mode-btn: url("../../assets/mobileModeBtnBalck.png");
+  --border: rgba(0, 0, 0, .7);
+  --mobBg: url('../../assets/Group 1087.svg')
+
+
+}
+.container {
+  overflow-x: hidden;
+}
+.mobileContentSection {
+  display: none;
+}
+
+.titleSection {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 65.20833vw;
+  background: var(--background);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  overflow-x: hidden;
+}
+
+.contentSection {
+  position: absolute;
+  top: 65.208vw;
+  width: 100%;
+  min-height: 277.708vw;
+  max-height: auto;
+  background: var(--contentBackground);
+
+  background-repeat: no-repeat;
+
+  background-size: cover;
+}
+.orangeCircle {
+  width: 1.666vw;
+  height: 1.666vw;
+  background-color: orange;
+  border-radius: 50%;
+  position: absolute;
+  top: 21.458vw;
+  left: 4.1666vw;
+}
+.orangeCircleWhiteMode {
+  width: 1.666vw;
+  height: 1.666vw;
+  background-color: green;
+  border-radius: 50%;
+  position: absolute;
+  top: 21.458vw;
+  left: 4.1666vw;
+}
+.arrowDown {
+  position: absolute;
+  top: 40.763vw;
+  left: 16.875vw;
+  width: 8.0555vw;
+  min-height: 8.0555vw;
+  background: var(--arrow-down);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.fbLogo {
+  position: absolute;
+  top: 52.636vw;
+  left: 2.638vw;
+  width: 1.458vw;
+  min-height: 1.458vw;
+  background: var(--fb-logo);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.instLogo {
+  position: absolute;
+  top: 52.636vw;
+  left: 5.416vw;
+  width: 1.458vw;
+  min-height: 1.458vw;
+  background: var(--inst-logo);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.title {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 87.708vw;
+  height: 14.652vw;
+  color: var(--text-primary);
+  position: absolute;
+  top: 15vw;
+  left: 10.138vw;
+  font-size: 10.138vw;
+}
+.footerTextLogo {
+  font-family: "Inter";
+  width: 4.513vw;
+  height: 0.8333vw;
+  position: absolute;
+  top: 52.916vw;
+  right: 20.381vw;
+  color: var(--text-primary);
+  font-size: 0.69444vw;
+}
+.whiteMode {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3.472vw;
+  border: 1px solid var(--text-primary);
+  width: 7.152vw;
+  height: 2.013vw;
+  position: absolute;
+  top: 52.326vw;
+  right: 2.187vw;
+  color: var(--text-primary);
+  font-family: "Inter";
+  font-size: 0.8333vw;
+  z-index: 15;
+  cursor: pointer;
+}
+.whiteMode:hover {
+  background-color: orange;
+}
+.categoryContainer {
+  position: sticky;
+  top: 0.8333vw;
+  left: 2.08333vw;
+  width: 16.0416vw;
+  height: 37.847vw;
+  color: var(--text-primary);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  gap: 1.111vw;
+  z-index: 10;
+}
+.category {
+  cursor: pointer;
+  /* Headings/H6 */
+  font-family: "Kudryashev Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.0833vw;
+  line-height: 2.4305vw;
+
+  /* white */
+  color: var(--text-primary);
+}
+.category:focus {
+  color: orange;
+}
+.category:hover {
+  color: orange;
+}
+.vector1 {
+  /* background: url("../../assets/Ellipse 276.svg"); */
+  position: absolute;
+  box-sizing: border-box;
+
+  width: 56.9444vw;
+  height: 56.9444vw;
+  left: 47.311vw;
+  top: 23.819vw;
+  border: 0.05vw solid var(--text-primary);
+  border-radius: 50%;
+  opacity: 0.7;
+  /* white */
+  z-index: 10;
+  /* transform: rotate(180deg); */
+}
+.vector2 {
+  /* background: url("../../assets/Ellipse 312.png"); */
+  box-sizing: border-box;
+  position: absolute;
+  width: 14.791vw;
+  height: 14.791vw;
+  left: 92.15277vw;
+  top: 17.986vw;
+  z-index: 10;
+  border: 0.05vw solid var(--text-primary);
+  border-radius: 50%;
+
+  opacity: 0.7;
+}
+.vector3 {
+  /* background: url("../../assets/Vector 10.svg");
+   */
+  opacity: 0.7;
+  position: absolute;
+  width: 147.2222vw;
+  height: 0.01vw;
+  left: 195.388;
+  top: 10vw;
+  z-index: 10;
+  transform: rotate(45deg);
+  border-top: 0.05vw solid var(--text-primary);
+}
+.vector4 {
+  /* background: url("../../assets/Vector 9.svg"); */
+  opacity: 0.7;
+  position: absolute;
+  width: 600.2222vw;
+  height: 0.01vw;
+  left: -308.388vw;
+  top: 10vw;
+  z-index: 10;
+  transform: rotate(45deg);
+  border-top: 0.05vw solid var(--text-primary);
+}
+@media screen and (max-width: 480px) {
+  .container {
+    display: none;
+  }
+  .mobileTitleSection {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    /* height: 264.791vw; */
+    height: 240.564vw;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background: var(--mobileBg) white;
+
+
+    /* background-position: center center; */
+
+    /* transform: matrix(1, 0, 0, -1, 0, 0); */
+  }
+  .mobileTitle {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 84.708vw;
+    height: 16.152vw;
+    color: var(--fontColor);
+
+    position: absolute;
+    top: 76.153vw;
+    left: 13.076vw;
+
+    font-family: "Kudryashev Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17.983vw;
+    /* line-height: 12.708vw; */
+  }
+  .mobileOrangeCircle {
+    width: 3.847vw;
+    height: 3.846vw;
+    background-color: #FF783F;
+    border-radius: 50%;
+    position: absolute;
+    top: 81.794vw;
+    left: 2.564vw;
+  }
+  .mobileArrowDown {
+    position: absolute;
+    top: 133.333vw;
+    left: 2.08333vw;
+
+    width: 24.102vw;
+    min-height: 24.102vw;
+    background: var(--arrow-down-mobile);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .mobileWhiteMode {
+    position: absolute;
+    top: 157.435vw;
+    right: 2.08333vw;
+
+    width: 8.717vw;
+    min-height: 8.717vw;
+    background: var(--theme-mode-btn);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .mobilePostsContainer {
+    position: absolute;
+    top: 256.541vw;
+    left: 2.08333vw;
+
+    width: 100vw;
+    height: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: white; */
+  }
+  .mobileContentSection {
+    display: block;
+    width: 100%;
+position: absolute;
+top: 30vw;
+    max-height: auto;
+    background: var(--fontColor);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  .slider {
+    border-top: 0.001vw  solid var(--border);
+
+    padding-top: 5vw;
+    width: 95vw;
+    height: 17.589vw;
+    left: 2.5vw;
+    position: absolute;
+    top: 182.897vw;
+    overflow-x: scroll;
+  }
+  .slider::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+
+  .mobileCategoryContainer {
+    width: 228.461vw;
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-self: space-between;
+    align-items: center;
+  }
+  .mobileCategory {
+    margin-right: 7.179vw;
+    width: 350vw;
+    height: 15.692vw;
+
+    font-family: "Kudryashev Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 5.128vw;
+    line-height: 7.692vw;
+    text-align: center;
+    /* white */
+    color: var(--fontColor);
+  }
+  .mobileCategory:active {
+    color: orange;
+  }
+  .circleContainer {
+    width: 100vw;
+    height: 250vw;
+    position: absolute;
+  
+    background: var(--mobBg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0.7;
+  }
+}

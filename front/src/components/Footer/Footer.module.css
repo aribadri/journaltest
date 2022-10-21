@@ -1,0 +1,164 @@
+:root {
+    --fontColor: white;
+    --text-primary: black;
+    --background: url("../../assets/whitebg.png");
+  --footer-logo: url('../../assets/mobileLogoBlack.svg');
+  --footer-logo-mobile: url('../../assets/mobileLogo.svg');
+
+
+  
+  
+  }
+  [data-theme='dark'] {
+    --fontColor: black;
+    --text-primary: white;
+    --background: 
+  
+    linear-gradient(0deg, #000000 2.6%, rgba(0, 0, 0, 0) 70.64%),
+    url("../../assets/mainbg.png");
+  --footer-logo: url('../../assets/mobileLogo.svg');
+  --footer-logo-mobile: url('../../assets/mobileLogoBlack.svg');
+
+
+  
+  
+  }
+.mobileFooter{
+    display:none;
+}
+.footer {
+  width: 100%;
+  height: 2.083333vw;
+  position: absolute;
+  bottom: 0.69444vw;
+  color: var(--text-primary);
+
+}
+.footerLogo {
+    background-image: var(--footer-logo);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 4.86111vw;
+    height: 4.86111vw;
+    /* margin-top: 26px;
+    margin-left: 30px; */
+    position: absolute;
+    bottom: 8.75vw;
+    left: 2.0833vw;;
+    z-index: 10;
+}
+.adress {
+    position: absolute;
+    
+   bottom:9.375vw;
+   width: 19.16666vw;
+   height: 3.6111vw;
+   left: 40%;
+   right: 40%;
+    /* Text / Body text */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.25vw;
+    line-height: 1.8055vw;
+    /* or 144% */
+    text-align: center;
+    
+    /* white */
+    color: var(--text-primary);
+
+
+}
+.year {
+    position: absolute;
+   
+    bottom: 10.27777vw;
+    right: 2.0833vw;
+    
+    /* Text / Body text */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.25vw;
+
+    line-height: 1.8055vw;
+
+    /* identical to box height, or 144% */
+    text-align: right;
+    
+    /* white */
+    color: var(--text-primary);
+
+
+}
+@media screen and (max-width: 480px) {
+    .footer {
+        display: none;
+    }
+    .mobileFooter {
+        margin-top: 37.17vw;
+        position: relative;
+        bottom: 21.025vw;
+left: 14.615vw;
+        width: 70.76vw;
+        height: 82.051vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .mobileFooterLogo {
+        background-image: var(--footer-logo-mobile);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        width: 28.717vw;
+        height: 28.717vw;
+        /* margin-top: 26px;
+        margin-left: 30px; */
+       
+        z-index: 10;
+        margin-bottom: 16.66vw;
+    }
+    .mobileAdress {
+
+        
+     /* Text / Body text */
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 4.615vw;
+
+
+/* or 144% */
+text-align: center;
+color: var(--fontColor);
+
+
+    }
+    .mobileYear {
+        margin-bottom: 16.66vw;
+
+        /* position: absolute;
+       
+        bottom: 10.27777vw;
+        right: 2.0833vw; */
+        
+        /* Text / Body text */
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 4.615vw;
+
+    
+        line-height: 1.8055vw;
+    
+        /* identical to box height, or 144% */
+        text-align: right;
+        
+        /* white */
+        color: var(--fontColor);
+
+    }
+}
